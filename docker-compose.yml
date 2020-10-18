@@ -1,0 +1,21 @@
+version: "3"
+services:
+  myApp:
+    image: z
+    ports:
+      - "8080:8080"
+    networks:
+      - student-mysql
+    depends_on:
+      - db1
+
+  db1:
+    image: mysql
+    networks:
+      - student-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=smznfrkn
+      - MYSQL_DATABASE=ea_lab1
+
+networks:
+  student-mysql:
