@@ -1,12 +1,4 @@
-## Failure of dockerizing
-
-I was able to create container for my mysql server but
-I could not finish composing it with my spring boot app's container yet.
-In order to not violate due date, I am uploading my project as it is.
-
-## Functionality
-
-Security and batch is working well.
+Security and batch jobs are working as expected.
 
 ## How to use
 
